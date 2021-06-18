@@ -1,0 +1,19 @@
+footer {
+  margin-top: 146px;
+  background-color: $gray-bg;
+  padding: 25px 0 55px;
+  p:first-of-type {
+    margin-top: 22px;
+  }
+  p:last-of-type {
+    margin: 17px 0 30px;
+  }
+
+  .social-media {
+    column-gap: 50px;
+    row-gap: 15px;
+    img {
+      cursor: pointer;
+    }
+  }
+}

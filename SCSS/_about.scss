@@ -1,0 +1,42 @@
+#about {
+  padding-top: 144px;
+
+  img {
+    max-width: 100%;
+  }
+  h1 {
+    margin-bottom: 99px;
+  }
+
+  p {
+    max-width: 580px;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+  h2 {
+    text-transform: uppercase;
+  }
+
+  .item2 {
+    margin-top: 30px;
+  }
+
+  button {
+    min-width: 200px;
+    height: 79px;
+    background: $purple;
+
+    &:hover {
+      background: $purple-hover;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #about {
+    .item2 {
+      margin-top: 0;
+    }
+  }
+}

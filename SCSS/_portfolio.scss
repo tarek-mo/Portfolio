@@ -1,0 +1,47 @@
+#portfolio {
+  padding-top: 290px;
+
+  .filter-projects {
+    margin: 138px 0 40px;
+    font-weight: 600;
+    span:not(:last-of-type) {
+      margin-right: 68px;
+    }
+    span {
+      cursor: pointer;
+    }
+    span.clicked {
+      color: $purple;
+    }
+  }
+
+  h1 {
+    margin-bottom: 38px;
+  }
+  .row {
+    column-gap: 90px;
+    row-gap: 30px;
+    justify-content: center;
+    margin-bottom: 129px;
+  }
+
+  h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 9px;
+    margin-top: 30px;
+  }
+
+  img {
+    max-width: 100%;
+    cursor: pointer;
+  }
+
+  button {
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+    height: 79px;
+    color: white;
+  }
+}

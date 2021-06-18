@@ -1,0 +1,77 @@
+#home {
+  padding-top: 100px;
+  text-transform: uppercase;
+  img {
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h1 {
+    font-size: 50px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+    position: relative;
+  }
+
+  h1::after {
+    content: "NEXUS";
+    position: absolute;
+    left: 0;
+    top: -40px;
+    font-size: 144px;
+    color: rgba(0, 0, 0, 0.45);
+
+    opacity: 0.1;
+  }
+
+  .cta-container {
+    margin-top: 88px;
+    button {
+      min-width: 180px;
+      height: 79px;
+      font-size: 20px;
+    }
+
+    button.primary {
+      margin-bottom: 15px;
+    }
+
+    button.secondary {
+      background: rgba(238, 236, 239, 0.5);
+      border: 1px solid rgba(118, 9, 156, 0.78);
+      color: $purple;
+    }
+  }
+
+  .item1 {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  #home {
+    .cta-container {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    button.primary {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #home {
+    h1::after {
+      font-size: 100px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      top: 50%;
+    }
+  }
+}

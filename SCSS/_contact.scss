@@ -1,0 +1,64 @@
+#contact {
+  padding-top: 170px;
+  text-align: left;
+
+  .outer-flex {
+    margin-top: 110px;
+    column-gap: 33px;
+    row-gap: 87px;
+  }
+  .item1 {
+    width: 700px;
+    max-width: 100%;
+
+    .middle-flex {
+      gap: 15px;
+      input {
+        background-color: $gray-bg;
+        flex-grow: 1;
+        max-width: 100%;
+        height: 83px;
+        border-radius: 10px;
+        border: none;
+        padding: 29px;
+        font-size: 20px;
+        &::placeholder {
+          color: $placeholder-clr;
+        }
+      }
+    }
+    .middle-flex:not(:last-of-type) {
+      margin-bottom: 87px;
+    }
+
+    .inner-flex {
+      gap: 28px;
+
+      h4 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .item2 {
+    width: 504px;
+    max-width: 100%;
+    height: 414px;
+    textarea {
+      border-radius: 10px;
+      height: 100%;
+      width: 100%;
+      background-color: $gray-bg;
+      padding: 30px 17px;
+      font-size: 20px;
+      border: none;
+      &::placeholder {
+        color: $placeholder-clr;
+      }
+    }
+  }
+}
